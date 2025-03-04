@@ -8,10 +8,12 @@ a {
 }
 
 a:hover{
-  color: #1A1818;
+  color: black;
 }
 
-/*桌機版*/
+/*----------桌機版------------*/
+
+/*-- Main Page */
 .container {
   display: flex;
   background-color: #ECE7E1;
@@ -19,6 +21,70 @@ a:hover{
   height: 100vh;
   position: relative;
 }
+
+.header-link,
+.intro-area,
+.link-area-center {
+  display: none;
+}
+
+.container::after {
+  content: '';
+  background-color: #1A1818;
+  width: 100vw;
+  height: 100vh;
+  animation: slideDownAndUp 0.7s ease-out forwards;
+  position: absolute;
+  width: 100vw;
+  visibility: visible;
+}
+
+/* 讓動畫結束後完全隱藏 */
+.container.animation-finished::after {
+  visibility: hidden;
+  /* 動畫結束後隱藏 */
+}
+
+.header-link.show,
+.intro-area.show,
+.link-area-center.show {
+  display: block;
+  /* animation: fadeIn 1.5s ease-out forwards;
+  animation-delay: 2s; */
+}
+
+@keyframes slideDownAndUp {
+  0% {
+    transform: translateY(-100%);
+    /* 從下方開始 */
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(0);
+    /* 展開至全屏 */
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(100%);
+    /* 向上收起 */
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    /* 初始透明 */
+  }
+
+  to {
+    opacity: 1;
+    /* 最後完全顯示 */
+  }
+}
+
 
 .header-area{
   height: 30px;
@@ -28,7 +94,7 @@ a:hover{
   transform: rotate(90deg);
   position: absolute;
   top: 250px;
-  left:-90px;
+  left:-120px;
   color: #1A1818;
 }
 
@@ -47,13 +113,20 @@ position: relative;
 .intro{
   position: absolute;
   top: 550px;
-  left: 300px;
+  left: 250px;
   text-align: left;
 }
+
 .intro-area{
-  width: 45%;
+  width: 25%;
   height: 100vh;
   font-family: "Roboto", sans-serif;
+  position: absolute;
+  left:10px;
+}
+
+.intro-area.show{
+  margin-left: 90px;
 }
 
 .intro-name{
@@ -66,14 +139,17 @@ position: relative;
 .intro-pro-2{
   font-size: 0.9rem;
   letter-spacing: .1rem;
+  width: 350px;
 }
 
 .intro-pro-1{
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 /*Link*/
 
 .link-area{
+  position: relative;
+  left:310px;
   width: 65%;
   height: 100vh;
   font-size: 4rem;
@@ -87,6 +163,285 @@ position: relative;
 
 .link-area-center{
   text-align: start;
-  font-size: 9rem;
+  font-size:11rem;
   line-height: 1;
+  font-family: 'GrandSlang-Roman', cursive;
+}
+
+/*-- Project Page */
+
+
+.container-2 {
+  display: flex;
+  background-color: #ECE7E1;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.header-area-2 {
+  height: 30px;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 150px;
+  color: #1A1818;
+}
+
+.header-link-home {
+  margin-right: 40px;
+  letter-spacing: .2rem;
+}
+
+.container-2::before
+{
+  content: '';
+  background-color: #1A1818;
+  width: 100vw;
+  height: 100vh;
+  animation: slideUpAndDown 1.5s ease-out forwards;
+}
+
+
+@keyframes slideUpAndDown {
+  0% {
+    transform: translateY(100%);
+    /* 從下方開始 */
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(0);
+    /* 展開至全屏 */
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-100%);
+    /* 向上收起 */
+    opacity: 0;
+    display: none;
+  }
+}
+
+
+.container-2{
+  position: relative;
+}
+
+
+
+
+.project-area{
+  background-color: #ECE7E1;
+  width: calc(100vw - 140px);
+  height: calc(100vh - 100px);
+  position: absolute;
+  top: 0px;
+  left: 140px;
+  z-index: 999;
+  margin-top:100px;
+  opacity: 0;
+    /* 初始狀態設為透明，確保動畫生效 */
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.project1,
+.project2{
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  margin-left:150px;
+  position: relative;
+}
+
+.go-btn-1,
+.go-btn-2{
+  content: "";
+  width: 80px;
+  height: 80px;
+  background-color: #1A1818;
+  position: absolute;
+  top: 200px;
+  left: 290px;
+  border-radius: 50px;
+  color: white;
+  font-family: 'GrandSlang-Roman', cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  box-shadow: 10px 5px 5px lightgrey;
+}
+
+.go-btn-1:hover,
+.go-btn-2:hover{
+  color: white;
+}
+.project1-photo-img,
+.project2-photo-img{
+  width: 350px;
+}
+
+.project1-description,
+.project2-description{
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.project1-title,
+.project2-title{
+  font-family: 'GrandSlang-Roman', cursive;
+  font-size: 3.5rem;
+}
+
+.project1-detail,
+.project2-detail{
+  font-family: "Roboto", sans-serif;
+  width: 600px;
+  margin-top: 30px;
+  letter-spacing: 1.1;
+}
+
+/*profile*/
+
+
+.about-area{
+  margin-top:60px;
+  background-color: #ECE7E1;
+    width: calc(100vw - 140px);
+    height: calc(100vh - 100px);
+    position: absolute;
+    top: 0px;
+    left: 140px;
+    z-index: 999;
+    margin-top: 100px;
+    opacity: 0;
+    /* 初始狀態設為透明，確保動畫生效 */
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 1s;
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+}
+
+
+.about-area-text{
+  width:55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-area-img{
+  width: 40%;
+}
+
+.about-area-text-about{
+  font-size: 12rem;
+  font-family: 'GrandSlang-Roman', cursive;
+  margin-top: 460px;
+}
+
+.about-area-text-about-detail{
+  width: 70%;
+  font-size: 2rem;
+  font-family: 'GrandSlang-Roman', cursive;
+}
+
+.about-area-text-detail{
+  width: 70%;
+  margin-top: 30px;
+  font-family: "Roboto";
+  line-height: 2;
+  text-align: left;
+  font-size: 1.2rem;
+  padding-bottom: 200px;
+}
+.profile{
+  width: 350px;
+}
+
+/*about-page*/
+
+.container-3 {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+
+.container-3::before {
+  content: '';
+  background-color: #1A1818;
+  width: 100vw;
+  height: 100vh;
+  animation: slideUpAndDownFull 1s ease-out forwards;
+}
+
+@keyframes slideUpAndDownFull {
+  0% {
+    transform: translateY(100%);
+    /* 從下方開始 */
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    /* 展開至全屏 */
+    opacity: 1;
+  }
+}
+
+.header-area-3 {
+  height: 30px;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 150px;
+  color: #1A1818;
+}
+
+.header-link-home-contact {
+  margin-right: 40px;
+  letter-spacing: .2rem;
+  color: white;
+}
+
+.header-link-home-contact:hover{
+  color: white;
+}
+
+.contact-area {
+  margin-top: 100px;
+  margin-left: 100px;
+  width: calc(100vw - 140px);
+  height: calc(100vh - 100px);
+  position: absolute;
+  top: 0px;
+  left: 140px;
+  z-index: 999;
+  margin-top: 100px;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: white;
+}
+
+.Hello,
+.Hello-text,
+.Hello-contact{
+  color: white !important;
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif
 }
