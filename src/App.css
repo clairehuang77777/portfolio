@@ -1,0 +1,92 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+a {
+  color: #1A1818;
+}
+
+a:hover{
+  color: #1A1818;
+}
+
+/*桌機版*/
+.container {
+  display: flex;
+  background-color: #ECE7E1;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.header-area{
+  height: 30px;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 250px;
+  left:-90px;
+  color: #1A1818;
+}
+
+.header-link-li,
+.header-link-github,
+.header-link-email{
+  margin-right: 40px;
+  letter-spacing: .2rem;
+}
+
+/*intro*/
+.intro-area{
+position: relative;
+}
+
+.intro{
+  position: absolute;
+  top: 550px;
+  left: 300px;
+  text-align: left;
+}
+.intro-area{
+  width: 45%;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.intro-name{
+  letter-spacing: .15rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.intro-pro-1,
+.intro-pro-2{
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+}
+
+.intro-pro-1{
+  margin-bottom: 10px;
+}
+/*Link*/
+
+.link-area{
+  width: 65%;
+  height: 100vh;
+  font-size: 4rem;
+  font-family: 'GrandSlang-Roman', cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.link-area-center{
+  text-align: start;
+  font-size: 9rem;
+  line-height: 1;
+}
