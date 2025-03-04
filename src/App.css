@@ -18,7 +18,7 @@ a:hover{
   display: flex;
   background-color: #ECE7E1;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
 }
 
@@ -32,7 +32,7 @@ a:hover{
   content: '';
   background-color: #1A1818;
   width: 100vw;
-  height: 100vh;
+  height: 880px;
   animation: slideDownAndUp 0.7s ease-out forwards;
   position: absolute;
   width: 100vw;
@@ -70,6 +70,8 @@ a:hover{
     transform: translateY(100%);
     /* 向上收起 */
     opacity: 0;
+    visibility: hidden;
+    display: none;
   }
 }
 
