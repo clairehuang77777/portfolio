@@ -18,7 +18,7 @@ export const ProjectPage = () => {
       <div className="project-area">
         <div className="project1">
           <div className="project1-photo">
-            <img className="project1-photo-img" src="/public/p1.png"></img>
+            <img className="project1-photo-img" src="/p1.png"></img>
             <a href="https://cancer-screening-helper-1.onrender.com/" className={clsx("go-btn-1",{"animate__pulse":mouseEnterGO1})} onMouseEnter={()=>setMouseEnterGO1(true)} onMouseLeave={()=>setMouseEnterGO1(false)}>GO</a>
             </div>
           <div className="project1-description">
@@ -28,7 +28,7 @@ export const ProjectPage = () => {
         </div>
         <div className="project2">
           <div className="project2-photo">
-            <img className="project2-photo-img" src="/public/p2.png"></img>
+            <img className="project2-photo-img" src="/p2.png"></img>
             <a href="https://clairehuang77777.github.io/Alpha-Tweet/" className={clsx("go-btn-2",{"animate__pulse":mouseEnterGO2})} onMouseEnter={()=>setMouseEnterGO2(true)} onMouseLeave={()=>setMouseEnterGO2(false)}>GO</a>
           </div>
           <div className="project2-description"><div className="project2-title"> ALPHA TWITTER</div>

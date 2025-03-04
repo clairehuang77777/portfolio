@@ -113,7 +113,7 @@ position: relative;
 .intro{
   position: absolute;
   top: 550px;
-  left: 250px;
+  left: 150px;
   text-align: left;
 }
 
@@ -149,7 +149,7 @@ position: relative;
 
 .link-area{
   position: relative;
-  left:310px;
+  left:290px;
   width: 65%;
   height: 100vh;
   font-size: 4rem;
@@ -163,7 +163,7 @@ position: relative;
 
 .link-area-center{
   text-align: start;
-  font-size:11rem;
+  font-size:10rem;
   line-height: 1;
   font-family: 'GrandSlang-Roman', cursive;
 }
@@ -401,11 +401,11 @@ position: relative;
 }
 
 .header-area-3 {
-  height: 30px;
+  height: 120px;
   font-family: "Josefin Sans", sans-serif;
   display: flex;
   flex-direction: column;
-  transform: rotate(90deg);
+  transform: rotate(270deg);
   position: absolute;
   top: 150px;
   color: #1A1818;
