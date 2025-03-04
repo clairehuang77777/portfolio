@@ -352,25 +352,26 @@ position: relative;
 }
 
 .about-area-text-about-detail{
-  width: 70%;
+  width: 80%;
   font-size: 2rem;
   font-family: 'GrandSlang-Roman', cursive;
 }
 
 .about-area-text-detail{
   width: 70%;
-  margin-top: 30px;
+  margin-top: 50px;
   font-family: "Roboto";
   line-height: 2;
   text-align: left;
   font-size: 1.2rem;
   padding-bottom: 200px;
+  letter-spacing: .15rem;
 }
 .profile{
   width: 350px;
 }
 
-/*about-page*/
+/*contact-page*/
 
 .container-3 {
   display: flex;
@@ -411,6 +412,7 @@ position: relative;
   position: absolute;
   top: 150px;
   color: #1A1818;
+  left: 50px;
 }
 
 .header-link-home-contact {
@@ -424,26 +426,31 @@ position: relative;
 }
 
 .contact-area {
-  margin-top: 100px;
-  margin-left: 100px;
   width: calc(100vw - 140px);
   height: calc(100vh - 100px);
   position: absolute;
-  top: 0px;
-  left: 140px;
+  top: 140px;
+  left: 300px;
   z-index: 999;
   margin-top: 100px;
-  opacity: 0;
   display: flex;
   flex-direction: column;
   text-align: left;
   color: white;
 }
 
-.Hello,
-.Hello-text,
-.Hello-contact{
-  color: white !important;
+.Hello{
+  font-size: 10rem;
+  font-family: 'GrandSlang-Roman', cursive;
+}
+
+.Hello-text{
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif
+}
+
+
+.Hello-contact {
   font-size: 1rem;
   font-family: "Josefin Sans", sans-serif
 }
