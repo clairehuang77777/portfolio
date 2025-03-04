@@ -8,11 +8,11 @@ import { AboutPage } from './page/AboutPage.jsx'
 import { ContactPage } from './page/ContactPage.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const basename = import.meta.env.VITE_API_BASE_URL || "/";
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <Routes>
             <Route path="/" element={<MainPage/>}></Route>
             <Route path="/project" element={<ProjectPage/>}></Route>
