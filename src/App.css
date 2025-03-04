@@ -114,7 +114,7 @@ position: relative;
 
 .intro{
   position: absolute;
-  top: 550px;
+  top: 500px;
   left: 150px;
   text-align: left;
 }
@@ -348,7 +348,7 @@ position: relative;
 .about-area-text-about{
   font-size: 12rem;
   font-family: 'GrandSlang-Roman', cursive;
-  margin-top: 460px;
+  margin-top: 860px;
 }
 
 .about-area-text-about-detail{
