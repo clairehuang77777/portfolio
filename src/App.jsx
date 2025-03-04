@@ -8,7 +8,7 @@ import { AboutPage } from './page/AboutPage.jsx'
 import { ContactPage } from './page/ContactPage.jsx'
 
 function App() {
-  const basename = import.meta.env.VITE_API_BASE_URL || "/";
+  const basename = import.meta.env.VITE_API_BASE_URL || "";
 
   return (
     <>
