@@ -242,7 +242,7 @@ position: relative;
   height: calc(100vh - 100px);
   position: absolute;
   top: 0px;
-  left: 140px;
+  left: 120px;
   z-index: 999;
   margin-top:100px;
   opacity: 0;
@@ -258,6 +258,7 @@ position: relative;
   flex-direction: row;
   margin-left:150px;
   position: relative;
+  align-items: start;
 }
 
 .go-btn-1,
@@ -306,8 +307,8 @@ position: relative;
 .project2-detail{
   font-family: "Roboto", sans-serif;
   width: 600px;
-  margin-top: 30px;
-  letter-spacing: 1.1;
+  margin-top: 15px;
+  letter-spacing: 1.5px;
 }
 
 /*profile*/
