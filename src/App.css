@@ -453,5 +453,169 @@ position: relative;
 
 .Hello-contact {
   font-size: 1rem;
-  font-family: "Josefin Sans", sans-serif
+  font-family: "Josefin Sans", sans-serif;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+}
+
+.contact-email,
+.contact-linkedin,
+.contact-github{
+  font-size: 1rem;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.contact-email:hover,
+.contact-linkedin:hover,
+.contact-github:hover{
+  color: white;
+}
+
+/*--------手機版---------*/
+
+@media screen and (max-width: 414px) {
+
+  /*main page*/
+  .container{
+    flex-direction: column;
+  }
+
+  .header-area,
+  .intro-pro-1,
+  .intro-pro-2{
+    display: none;
+  }
+
+  .link-area{
+    width: 0%;
+    left:0px;
+  }
+
+  .link-area-center.show{
+    font-size: 3rem;
+  }
+
+  .intro-name{
+    width: 140px;
+  }
+
+  .intro{
+    top:600px
+  }
+
+  .intro-area.show{
+   margin-left: 0px;
+  }
+
+  /*project page*/
+
+  .header-area-2{
+    top:50px;
+    left: 50px;
+    transform:rotate(360deg)
+  }
+
+
+  .project-area{
+    left:0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project1,
+  .project2{
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .project1-detail,
+  .project2-detail{
+    display: none;
+  }
+
+  .project1-description,
+  .project2-description{
+    margin-left: 5px;
+    margin-top: 0px
+  }
+
+  .project1-title,
+  .project2-title{
+    font-size: 1.2rem;
+  }
+
+  .go-btn-1,
+  .go-btn-2 {
+    left: 210px;
+    top: 140px;
+  }
+
+  .project1{
+    top: 20px;
+  }
+
+  .project1-photo-img,
+  .project2-photo-img{
+      width: 280px;
+  }
+  /*about page*/
+  .about-area{
+    flex-direction: column;
+    left:0px;
+    width: 100vw;
+    align-items: center;
+  }
+
+  .about-area-text,
+  .about-area-text-about-detail,
+  .about-area-text-detail{
+    width: 85%;
+  }
+
+  .about-area-text-about{
+    font-size: 4rem;
+    margin-top: 10px;
+  }
+  
+  .about-area-text-detail{
+    font-size: 1rem;
+    padding-bottom: 100px;
+  }
+  
+  .about-area-img{
+      width: 100%;
+      padding-bottom: 100px;
+    }
+
+  /*contact page*/
+  .container-3{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-area-3{
+    transform: rotate(360deg);
+    top: 50px;
+  }
+
+  .contact-area{
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Hello{
+    font-size: 5rem;
+  }
+
+
 }

@@ -22,7 +22,7 @@ export const ProjectPage = () => {
             <a href="https://cancer-screening-helper-1.onrender.com/" className={clsx("go-btn-1",{"animate__animated animate__pulse":mouseEnterGO1})} onMouseEnter={()=>setMouseEnterGO1(true)} onMouseLeave={()=>setMouseEnterGO1(false)}>GO</a>
             </div>
           <div className="project1-description">
-             <div className="project1-title"> HEALTH CHECK MAP</div>
+             <div className="project1-title"> HEALTH-CHECK MAP</div>
              <div className="project1-detail">Show the qualified health check area that you can do by filling your gender and age, also show the nearest clinic to do the health check by getting your position. </div>
           </div>
         </div>
