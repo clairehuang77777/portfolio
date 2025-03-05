@@ -474,6 +474,18 @@ position: relative;
   color: white;
 }
 
+@media (prefers-color-scheme: dark){
+  .intro-name,
+  .project1-title,
+  .project2-title,
+  .about-area-text-about,
+  .about-area-text-about-detail,
+  .about-area-text-detail{
+    color: #1A1818;
+  }
+
+
+}
 /*--------手機版---------*/
 
 @media screen and (max-width: 414px) {
