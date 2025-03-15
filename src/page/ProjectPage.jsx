@@ -4,6 +4,7 @@ import { clsx } from "clsx"
 export const ProjectPage = () => {
   const [mouseEnterGO1, setMouseEnterGO1] = useState(false)
   const [mouseEnterGO2, setMouseEnterGO2] = useState(false)
+  const [mouseEnterGO3, setMouseEnterGO3] = useState(false)
 
   return (
     <>
@@ -33,6 +34,14 @@ export const ProjectPage = () => {
           </div>
           <div className="project2-description"><div className="project2-title"> ALPHA TWITTER</div>
              <div className="project2-detail">It's a twitter-like social media website, where you can post, press like and reply to other. Support RWD and darkmode. Use this test account: claire/abc123 to login. </div></div>
+        </div>
+        <div className="project3">
+          <div className="project3-photo">
+            <img className="project3-photo-img" src="/p3.png"></img>
+            <a href="https://oysho-ec.onrender.com/" className={clsx("go-btn-3",{"animate__animated animate__pulse":mouseEnterGO3})} onMouseEnter={()=>setMouseEnterGO3(true)} onMouseLeave={()=>setMouseEnterGO3(false)}>GO</a>
+          </div>
+          <div className="project3-description"><div className="project3-title"> OYSHO</div>
+             <div className="project3-detail">It's a E-commerce website, where you can browse product, add to cart and search product. </div></div>
         </div>
       </div>
       </div>

@@ -178,7 +178,7 @@ position: relative;
   display: flex;
   background-color: #ECE7E1;
   width: 100vw;
-  height: 100vh;
+  min-height: 1157px;
   position: relative;
 }
 
@@ -226,6 +226,8 @@ position: relative;
     /* 向上收起 */
     opacity: 0;
     display: none;
+    visibility: hidden;
+    height: 0;
   }
 }
 
@@ -240,10 +242,10 @@ position: relative;
 .project-area{
   background-color: #ECE7E1;
   width: calc(100vw - 140px);
-  height: calc(100vh - 100px);
-  position: absolute;
+  /* height: calc(100vh - 100px); */
+  position: absolute; 
   top: 0px;
-  left: 120px;
+  margin-left: 120px;
   z-index: 999;
   margin-top:100px;
   opacity: 0;
@@ -253,7 +255,8 @@ position: relative;
 }
 
 .project1,
-.project2{
+.project2,
+.project3{
   height: 40vh;
   display: flex;
   flex-direction: row;
@@ -263,7 +266,8 @@ position: relative;
 }
 
 .go-btn-1,
-.go-btn-2{
+.go-btn-2,
+.go-btn-3{
   content: "";
   width: 80px;
   height: 80px;
@@ -283,29 +287,34 @@ position: relative;
 }
 
 .go-btn-1:hover,
-.go-btn-2:hover{
+.go-btn-2:hover,
+.go-btn-3:hover{
   color: white;
 }
 .project1-photo-img,
-.project2-photo-img{
+.project2-photo-img,
+.project3-photo-img{
   width: 350px;
 }
 
 .project1-description,
-.project2-description{
+.project2-description,
+.project3-description{
   text-align: left;
   margin-left: 50px;
   margin-top: 30px;
 }
 
 .project1-title,
-.project2-title{
+.project2-title,
+.project3-title{
   font-family: 'GrandSlang-Roman', cursive;
   font-size: 3.5rem;
 }
 
 .project1-detail,
-.project2-detail{
+.project2-detail,
+.project3-detail{
   font-family: "Roboto", sans-serif;
   width: 600px;
   margin-top: 15px;
