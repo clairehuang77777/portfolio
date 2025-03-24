@@ -33,7 +33,7 @@ a:hover{
   background-color: #1A1818;
   width: 100vw;
   height: 880px;
-  animation: slideDownAndUp 0.7s ease-out forwards;
+  animation: slideDownAndUp 1s ease-out forwards;
   position: absolute;
   width: 100vw;
   visibility: visible;
@@ -61,7 +61,7 @@ a:hover{
   }
 
   50% {
-    transform: translateY(0);
+    transform: translateY(100%);
     /* 展開至全屏 */
     opacity: 1;
   }
@@ -178,7 +178,7 @@ position: relative;
   display: flex;
   background-color: #ECE7E1;
   width: 100vw;
-  min-height: 1257px;
+  min-height: 1457px;
   position: relative;
 }
 
@@ -256,7 +256,8 @@ position: relative;
 
 .project1,
 .project2,
-.project3{
+.project3,
+.project4{
   height: 40vh;
   display: flex;
   flex-direction: row;
@@ -267,7 +268,8 @@ position: relative;
 
 .go-btn-1,
 .go-btn-2,
-.go-btn-3{
+.go-btn-3,
+.go-btn-4{
   content: "";
   width: 80px;
   height: 80px;
@@ -288,18 +290,21 @@ position: relative;
 
 .go-btn-1:hover,
 .go-btn-2:hover,
-.go-btn-3:hover{
+.go-btn-3:hover,
+.go-btn-4:hover{
   color: white;
 }
 .project1-photo-img,
 .project2-photo-img,
-.project3-photo-img{
+.project3-photo-img,
+.project4-photo-img{
   width: 350px;
 }
 
 .project1-description,
 .project2-description,
-.project3-description{
+.project3-description,
+.project4-description{
   text-align: left;
   margin-left: 50px;
   margin-top: 30px;
@@ -307,14 +312,16 @@ position: relative;
 
 .project1-title,
 .project2-title,
-.project3-title{
+.project3-title,
+.project4-title{
   font-family: 'GrandSlang-Roman', cursive;
   font-size: 3.5rem;
 }
 
 .project1-detail,
 .project2-detail,
-.project3-detail{
+.project3-detail,
+.project4-detail{
   font-family: "Roboto", sans-serif;
   width: 600px;
   margin-top: 15px;
@@ -396,7 +403,7 @@ position: relative;
   content: '';
   background-color: #1A1818;
   width: 100vw;
-  height: 100vh;
+  height: 1457px;
   animation: slideUpAndDownFull 1s ease-out forwards;
 }
 
@@ -533,6 +540,10 @@ position: relative;
 
   /*project page*/
 
+  .container-2 {
+    min-height: 1257px;
+  }
+
   .header-area-2{
     top:50px;
     left: 50px;
@@ -550,7 +561,8 @@ position: relative;
 
   .project1,
   .project2,
-  .project3{
+  .project3,
+  .project4{
       margin-left: 0px;
       display: flex;
       flex-direction: column;
@@ -558,26 +570,30 @@ position: relative;
 
   .project1-detail,
   .project2-detail,
-  .project3-detail{
+  .project3-detail,
+  .project4-detail{
     display: none;
   }
 
   .project1-description,
   .project2-description,
-  .project3-description{
+  .project3-description,
+  .project4-description{
     margin-left: 5px;
     margin-top: 0px
   }
 
   .project1-title,
   .project2-title,
-  .project3-title{
+  .project3-title,
+  .project4-title{
     font-size: 1.2rem;
   }
 
   .go-btn-1,
   .go-btn-2,
-  .go-btn-3 {
+  .go-btn-3,
+  .go-btn-4 {
     left: 210px;
     top: 140px;
   }
@@ -588,7 +604,8 @@ position: relative;
 
   .project1-photo-img,
   .project2-photo-img,
-  .project3-photo-img{
+  .project3-photo-img,
+  .project4-photo-img{
       width: 280px;
   }
   /*about page*/
