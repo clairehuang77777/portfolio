@@ -359,6 +359,15 @@ position: relative;
   align-items: center;
 }
 
+.project-area-text {
+  margin-top: 1200px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .about-area-img{
   width: 40%;
 }
@@ -375,6 +384,38 @@ position: relative;
   font-family: 'GrandSlang-Roman', cursive;
 }
 
+.project-area-title{
+  margin-top: 500px;
+  margin-bottom: 100px;
+  width: 90%;
+    font-size: 5rem;
+    font-style: bold;
+    font-family: 'GrandSlang-Roman', cursive;
+}
+
+.project-area-subtitle {
+  width: 90%;
+  font-size: 2rem;
+  font-style: bold;
+  font-family: 'Roboto';
+}
+
+.project-area-text-about-detail {
+  width: 80%;
+  font-size: 2.5rem;
+  text-align: start;
+  margin-left: 100px;
+  font-style: bold;
+  font-family: 'GrandSlang-Roman', cursive;
+}
+
+.structure-photo-img{
+  width: 600px;
+}
+
+.line-auto-video{
+  height:700px;
+}
 .about-area-text-detail{
   width: 70%;
   margin-top: 50px;
@@ -383,6 +424,17 @@ position: relative;
   text-align: left;
   font-size: 1.2rem;
   padding-bottom: 200px;
+  /* letter-spacing: .1rem; */
+}
+
+.project-area-text-detail {
+  width: 70%;
+  margin-top: 50px;
+  font-family: "Roboto";
+  line-height: 2;
+  text-align: left;
+  font-size: 1.2rem;
+  padding-bottom: 50px;
   letter-spacing: .15rem;
 }
 .profile{

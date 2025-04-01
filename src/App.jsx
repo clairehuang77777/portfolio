@@ -6,6 +6,7 @@ import { ProjectPage } from './page/ProjectPage'
 import 'animate.css';
 import { AboutPage } from './page/AboutPage.jsx'
 import { ContactPage } from './page/ContactPage.jsx'
+import { DetailPage } from './page/DetailPage.jsx'
 
 function App() {
   const basename = import.meta.env.VITE_API_BASE_URL || "";
@@ -18,6 +19,7 @@ function App() {
             <Route path="/project" element={<ProjectPage/>}></Route>
             <Route path="/about" element={<AboutPage/>}></Route>
             <Route path="/contact" element={<ContactPage/>}></Route>
+            <Route path="/detail" element={<DetailPage/>}></Route>
         </Routes>
       </BrowserRouter>
     </>

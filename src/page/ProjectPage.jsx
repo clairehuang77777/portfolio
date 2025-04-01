@@ -48,7 +48,7 @@ export const ProjectPage = () => {
         <div className="project4">
           <div className="project4-photo">
             <img className="project4-photo-img" src="/p4.png"></img>
-            <a href="https://mychat-b570.onrender.com/" className={clsx("go-btn-4",{"animate__animated animate__pulse":mouseEnterGO3})} onMouseEnter={()=>setMouseEnterGO4(true)} onMouseLeave={()=>setMouseEnterGO4(false)}>GO</a>
+            <a href="https://mychat-b570.onrender.com/" className={clsx("go-btn-4",{"animate__animated animate__pulse":mouseEnterGO4})} onMouseEnter={()=>setMouseEnterGO4(true)} onMouseLeave={()=>setMouseEnterGO4(false)}>GO</a>
           </div>
           <div className="project4-description"><div className="project4-title"> Group Chat</div>
              <div className="project4-detail">Group Chat Website can see the group chat list and see each chat room, reply as a chat manage and press reaction button. </div></div>
