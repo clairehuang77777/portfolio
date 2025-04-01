@@ -1,11 +1,14 @@
 import { useState } from "react"
 import { clsx } from "clsx"
+import { useNavigate } from "react-router-dom"
 
 export const ProjectPage = () => {
   const [mouseEnterGO1, setMouseEnterGO1] = useState(false)
   const [mouseEnterGO2, setMouseEnterGO2] = useState(false)
   const [mouseEnterGO3, setMouseEnterGO3] = useState(false)
   const [mouseEnterGO4, setMouseEnterGO4] = useState(false)
+  const [mouseEnterGO5, setMouseEnterGO5] = useState(false)
+  const navigate = useNavigate()
 
 
   return (
@@ -52,6 +55,14 @@ export const ProjectPage = () => {
           </div>
           <div className="project4-description"><div className="project4-title"> Group Chat</div>
              <div className="project4-detail">Group Chat Website can see the group chat list and see each chat room, reply as a chat manage and press reaction button. </div></div>
+        </div>
+        <div className="project5">
+          <div className="project5-photo">
+            <img className="project5-photo-img" src="/p5.png"></img>
+            <a href="" className={clsx("go-btn-5",{"animate__animated animate__pulse":mouseEnterGO5})} onMouseEnter={()=>setMouseEnterGO5(true)} onMouseLeave={()=>setMouseEnterGO5(false)} onClick={()=>{navigate("/detail")}}>GO</a>
+          </div>
+          <div className="project5-description"><div className="project5-title"> LINE Booking RPA Tool</div>
+             <div className="project5-detail">Auto update reservation details to google calendar by tacking specific key word in LINE channel, in order to avoid human error. </div></div>
         </div>
       </div>
       </div>

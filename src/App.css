@@ -178,7 +178,7 @@ position: relative;
   display: flex;
   background-color: #ECE7E1;
   width: 100vw;
-  min-height: 1457px;
+  min-height: 1857px;
   position: relative;
 }
 
@@ -257,7 +257,8 @@ position: relative;
 .project1,
 .project2,
 .project3,
-.project4{
+.project4,
+.project5{
   height: 40vh;
   display: flex;
   flex-direction: row;
@@ -269,7 +270,8 @@ position: relative;
 .go-btn-1,
 .go-btn-2,
 .go-btn-3,
-.go-btn-4{
+.go-btn-4,
+.go-btn-5{
   content: "";
   width: 80px;
   height: 80px;
@@ -291,20 +293,23 @@ position: relative;
 .go-btn-1:hover,
 .go-btn-2:hover,
 .go-btn-3:hover,
-.go-btn-4:hover{
+.go-btn-4:hover,
+.go-btn-5:hover{
   color: white;
 }
 .project1-photo-img,
 .project2-photo-img,
 .project3-photo-img,
-.project4-photo-img{
+.project4-photo-img,
+.project5-photo-img{
   width: 350px;
 }
 
 .project1-description,
 .project2-description,
 .project3-description,
-.project4-description{
+.project4-description,
+.project5-description{
   text-align: left;
   margin-left: 50px;
   margin-top: 30px;
@@ -313,7 +318,8 @@ position: relative;
 .project1-title,
 .project2-title,
 .project3-title,
-.project4-title{
+.project4-title,
+.project5-title{
   font-family: 'GrandSlang-Roman', cursive;
   font-size: 3.5rem;
 }
@@ -321,7 +327,8 @@ position: relative;
 .project1-detail,
 .project2-detail,
 .project3-detail,
-.project4-detail{
+.project4-detail,
+.project5-detail{
   font-family: "Roboto", sans-serif;
   width: 600px;
   margin-top: 15px;
@@ -593,7 +600,7 @@ position: relative;
   /*project page*/
 
   .container-2 {
-    min-height: 1257px;
+    min-height: 1457px;
   }
 
   .header-area-2{
@@ -614,7 +621,8 @@ position: relative;
   .project1,
   .project2,
   .project3,
-  .project4{
+  .project4,
+  .project5{
       margin-left: 0px;
       display: flex;
       flex-direction: column;
@@ -623,14 +631,16 @@ position: relative;
   .project1-detail,
   .project2-detail,
   .project3-detail,
-  .project4-detail{
+  .project4-detail,
+  .project5-detail{
     display: none;
   }
 
   .project1-description,
   .project2-description,
   .project3-description,
-  .project4-description{
+  .project4-description,
+  .project5-description{
     margin-left: 5px;
     margin-top: 0px
   }
@@ -638,14 +648,16 @@ position: relative;
   .project1-title,
   .project2-title,
   .project3-title,
-  .project4-title{
+  .project4-title,
+  .project5-title{
     font-size: 1.2rem;
   }
 
   .go-btn-1,
   .go-btn-2,
   .go-btn-3,
-  .go-btn-4 {
+  .go-btn-4,
+  .go-btn-5 {
     left: 210px;
     top: 140px;
   }
@@ -657,7 +669,8 @@ position: relative;
   .project1-photo-img,
   .project2-photo-img,
   .project3-photo-img,
-  .project4-photo-img{
+  .project4-photo-img,
+  .project5-photo-img{
       width: 280px;
   }
   /*about page*/
@@ -688,6 +701,33 @@ position: relative;
       width: 100%;
       padding-bottom: 100px;
     }
+
+  .project-area-text{
+    margin-top: 100px;
+  }
+  
+  .project-area-title{
+      margin-top: 0px;
+      font-size: 2.5rem;
+  }
+
+  .project-area-text-about-detail{
+    margin-left: 0px;
+    font-size: 2rem;
+  }
+  .project-area-text-detail {
+    width: 90%;
+    font-size: 1rem;
+    letter-spacing: 0;
+  }
+
+    .structure-photo-img {
+      width: 300px;
+    }
+
+  .line-auto-video {
+     height: 600px;
+  }
 
   /*contact page*/
   .container-3{
